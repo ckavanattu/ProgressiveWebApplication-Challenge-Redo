@@ -54,7 +54,6 @@ self.addEventListener('activate', function(e) {
       let cacheKeeplist = keyList.filter(function(key) {
         return key.indexOf(APP_PREFIX);
       });
-      // add current cache name to keeplist
       cacheKeeplist.push(CACHE_NAME);
 
       return Promise.all(
